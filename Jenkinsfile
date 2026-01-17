@@ -33,7 +33,7 @@ pipeline {
     }
     post {
       always {
-        echo "send mail with result $fileContent"
+        echo "send mail with choosen file name\\s $fileName"
       }
       // success {
       //   DO SOMETHING
