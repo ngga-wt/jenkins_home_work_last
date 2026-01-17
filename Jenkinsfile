@@ -42,8 +42,8 @@ pipeline {
             body: """
               <html>
                 <body>
-                    <span>$START_TIME</span>
                     <h2>Build Notification</h2>
+                    <span>$START_TIME</span>
                     <h4>Selected Languge\\s is: ${params.LANGUGE} Languge\\s</h4>
                     <p>Project: ${env.JOB_NAME}</p>
                     <p>Build Number: ${env.BUILD_NUMBER}</p>
