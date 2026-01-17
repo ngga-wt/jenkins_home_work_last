@@ -31,4 +31,15 @@ pipeline {
             }
         }
     }
+    post {
+      always {
+        echo "send mail with result $fileContent"
+      }
+      // success {
+      //   DO SOMETHING
+      // }
+      // failure {
+      //   mail to: team@example.com, subject: 'The Pipeline ${PROJECT_NAME} failed :('
+      // }
+    }
 }
